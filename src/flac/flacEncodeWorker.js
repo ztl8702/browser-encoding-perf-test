@@ -4,7 +4,7 @@
  * This file does not go through webpack.
  */
 
-importScripts('/libs/libflac3-1.3.2.min.js');
+importScripts('/build/libflac3-1.3.2.min.js');
 
 
 const FLAC_ERRORS = {

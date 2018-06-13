@@ -1,4 +1,4 @@
 WEBPACK = ./node_modules/.bin/webpack
 
 compile:
-	$(WEBPACK) -p
+	$(WEBPACK) -p && cp ./vendor/libflac* ./build
