@@ -2,7 +2,7 @@ import { RecordingController } from './RecordingController';
 
 export * from './RecordingController';
 
-window.runTest = function (format = 'wav') {
+window.runTest = function (format = 'wav', seconds = 30) {
     let a = new RecordingController(format);
     console.log('Test format', format);
 
@@ -19,7 +19,7 @@ window.runTest = function (format = 'wav') {
                         a.downloadRecordedData();
                         console.log('Download triggered');
                     })
-            }, 10000);
+            }, seconds * 1000);
     },1000);
 }
 
